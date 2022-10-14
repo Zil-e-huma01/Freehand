@@ -1,0 +1,458 @@
+/*----------Basic setup-------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    color: rgb(105, 98, 98);
+    background-color: rgb(252, 252, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/*-----Basic setup-----*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section{
+    padding: 80px 0px;
+}
+.box{
+    padding: 1%;
+}
+.navigation{display: none;}
+/*----------headings-------*/
+h1{
+    font-size: 250%;
+    font-weight: 50;
+    color: rgb(32, 1, 61);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 65px;
+    margin-top: 50px; 
+}
+h2{
+    color: rgb(32, 1, 61);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: 50;
+    font-size: 180%;
+}
+h3{
+    color: rgb(32, 1, 61);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 100%;
+}
+
+/*-----------------------------
+----------Header--------------
+------------------------------*/
+header{
+    margin-top: 35px;
+    height: 100vh;
+}
+.main-logo{
+    float: left;
+}
+.main-cont {width:100%;}
+.main-text{
+    margin-top: 2px;
+    margin-left: 6px;
+    margin-right: 100px;
+    font-weight: 500;
+    font-size: 120%;
+}
+.hero-text{
+    margin-bottom: 20px;
+    font-size: 90%;
+    line-height: 30px;
+}
+.hero-img-2 {float: right;}
+.hero-img {display: none;}
+.hero-img-2 img{
+    display: inline-block;
+    width: 80%;
+    margin-top: 60px;    
+}
+.hero-img img{
+    display: inline-block;
+    width: 80%;
+    margin-top: 60px;
+}
+/*------------ navigation--------------*/
+.main-nav{
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 20%;
+}
+.main-nav li{
+    display: inline-block;
+}
+.main-nav li a{
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 80%;
+    font-weight: 500;
+    color: rgb(32, 1, 61);
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid rgb(32, 1, 61);
+}
+/*----------buttons----------*/
+.main-but{
+    float: right;
+}
+.top{
+    margin-top: 37px;
+}
+.top:after{
+    display: block;
+    height: 2px;
+    background-color: rgb(212, 209, 209);
+    content: " ";
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.btn{
+    display: inline-block;
+    border: 2px solid rgb(32, 1, 61);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 90%;
+    color: rgb(32, 1, 61);
+}
+.full-but{
+    background-color: rgb(32, 1, 61);
+    color: white;
+}
+.half-but:hover,
+.half-but:active{
+    background-color: rgb(32, 1, 61);
+    color: white;
+}
+.main-butf{
+    border: 2px solid rgb(40, 142, 226);
+    background-color: rgb(40, 142, 226);
+    color: white;
+}
+.main-buth{
+    border: 2px solid rgb(40, 142, 226);
+    color: rgb(40, 142, 226);   
+}
+.main-buth:hover,
+.main-buth:active{
+    background-color: rgb(40, 142, 226);
+    color: white;
+}
+/*-------------------------------------
+---------------Services----------------
+-------------------------------------*/
+.services{margin-top: -230px;}
+.ser-para1{
+    font-size: 80%;
+    margin-bottom: 5px;
+}
+.ser-para2{
+    font-size: 75%;
+    margin-top: 5px;
+}
+.allser{
+    margin-top: 50px;
+}
+.ser{
+    display: inline-block;
+    border: 2px solid rgb(243, 231, 231);
+    border-radius: 8px;
+    padding: 20px;
+}
+.ser img{
+    display: inline-block;
+    border: 2px solid rgb(243, 231, 231);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 3%;
+}
+.ser-p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    color: rgb(32, 1, 61);
+    font-size: 70%;
+    font-weight: 100;
+    line-height: 20px;
+}
+.ser a{
+    font-weight: 50;
+    font-size: 80%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: rgb(105, 98, 98);
+}
+.ser a:hover,
+.ser a:active{
+    color: rgb(175, 168, 168);
+}
+
+/*-----------------------------------------
+-------------Features----------------------
+-----------------------------------------*/
+.features{  margin-top: 50px;}
+
+.feat-1{
+    margin-right: 30px;
+    background-image: url(../img/feature-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 500px;
+    border-radius: 8px;
+}
+.feat-2{
+    margin-left: 30px;
+    background-image: url(../img/feature-2.png);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 500px;
+    border-radius: 8px;
+}
+.feat-p{
+    padding-top: 350px;
+    margin-left: 65px;
+    margin-right: 65px;
+    color: white;
+    font-size: 120%;
+    font-weight: 10;
+}
+
+/*-----------------------------------
+---------------plans-----------------
+-----------------------------------*/
+.plan-01{
+    border-top: 3px solid rgb(49, 123, 233);
+    margin-top: 50px;
+    background-color: white;
+}
+.plan-10{
+    font-weight: 400;
+    font-size: 110%;
+    text-align: center;
+    margin-top: 40px;
+}
+.plan-1{
+    color: rgb(49, 123, 233);
+    font-size: 150%;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+}
+.plan-11{
+    text-align: center;
+    font-size: 75%;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.plan-111{
+    text-align: center;
+    font-size: 80%;
+    font-weight: 200;
+    margin-top: 40px;
+}
+.p-but-h{
+    border-radius: 200px;
+    margin-left: 110px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.p-but-h:hover,
+.p-but-h:active{
+    color: white;
+    background-color: rgb(32, 1, 61);
+}
+.p-but-f{
+    background-color: rgb(32, 1, 61);
+    color: white;
+    margin-left: 110px;
+    border-radius: 200px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.plan-02{
+    border-top: 3px solid rgb(113, 179, 135);
+    margin-top: 50px;
+    background-color: white;
+}
+.plan-2{
+    color: rgb(113, 179, 135);
+    font-size: 150%;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+}
+.plan-03{
+    border-top: 3px solid rgb(224, 97, 88);
+    margin-top: 50px;
+    background-color: white;
+}
+.plan-3{
+    color: rgb(224, 97, 88);
+    font-size: 150%;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/*---------------------------------
+--------------try------------------
+---------------------------------*/
+.try-it{
+    background-image: url(../img/image-3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.t-p-1{
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: 10;
+    font-size: 160%;
+    text-align: center;
+}
+.t-p-2{
+    color: white;
+    text-align: center;
+    font-size: 75%;
+    font-weight: 200;
+    margin-top: 30px;
+}
+.t-but-f{
+    border: 2px solid white;
+    background-color: white;
+    color: rgb(37, 163, 212);
+    border-radius: 200px;
+}
+.t-but-f:hover,
+.t-but-f:active{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+.t-but-h{
+    margin-left: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 200px;
+}
+.t-b{
+    margin-top: 40px;
+    text-align: center;
+}
+/*-----------------------------------
+----------------footer---------------
+----------------------------------*/
+footer{
+    margin-top: 50px;
+    background-color: rgb(32, 1, 61);
+    color: white;
+    padding-top: 50px;
+}
+.f-t{
+    width: 57%;
+    margin-bottom: 20px;
+}
+.foot-para{
+    font-size: 65%;
+    line-height: 20px;
+    font-weight: 50;
+    margin-top: 25px;
+}
+.social-links{
+    list-style: none;
+    margin-top: 30px;
+}
+.social-links li{
+    display: inline-block;
+    background-color: white;
+    margin-left: 5px;
+}
+.social-links li a {
+    display: inline-block;
+    color: rgb(32, 1, 61);
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 2px solid white;
+    border-radius: 9px;
+}
+.link-f{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.foot-links{
+    list-style: none;
+    margin-top: 18px;
+}
+.foot-list li{
+    display: inline-block;
+   
+}
+.foot-links li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 70%;
+    font-weight: 50;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.foot-links li a:hover,
+.foot-links li a:active{
+    color: rgb(119, 119, 230);
+}
+footer h3{
+    color: white;
+}
+.f-mail{
+    display: inline-block;
+    color: white;
+    font-size: 110%;
+    text-decoration: none;
+    padding-top: 20px;
+}
+.f-mail:hover,
+.f-mail:active{
+    color: rgb(119, 119, 230);
+}
+.foot-img{
+    margin-top: 20px;
+}
+.img-1{
+    margin-right: 5px;
+}
+.lastline{
+    text-align: center;
+    font-size: 90%;
+    margin-bottom: 50px;
+}

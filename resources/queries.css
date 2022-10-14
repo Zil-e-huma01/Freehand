@@ -1,0 +1,203 @@
+/*----Big tablets to 1200px (widths smaller than the 1140px row)--*/ 
+@media only screen and (max-width: 1200px) {
+    .main{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .services,
+    .features{
+        margin: 100px 40px;
+    }
+    .ser{
+        padding: 20px;
+    }
+    .footer{padding-left: 5%;  padding-right: 5%;}
+}
+
+/*----Small tablets to big tablets: 768px to 1023px-----*/ 
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px;}
+    .main-logo {
+        margin-left: 15px;
+    }
+    .main-nav {
+        padding-left: 12%;
+    }
+    .main-but{
+        margin-right: 15px;
+    }
+    .services{margin-bottom: -15%;}
+    .features-box {margin-left: 30px;}
+    .feat-1 {
+        margin-right: 0px;
+        margin-left: 30%;
+    }
+    .plans {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: -30%;
+    }
+}
+
+/*-----small phones to small tablets: 481px to 767px----*/
+@media only screen and (max-width: 767px){ 
+    body{ font-size: 16px;}
+    .navigation{display: inline-block;}
+    .navigation__button {
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        top: 24px;
+        right: 15px;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+        text-align: center;
+        cursor: pointer;
+    }
+    .navigation__background {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        position: fixed;
+        top: 28px;
+        right: 28px;
+        background-color: white;
+        z-index: 1000;
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    .navigation__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    .navigation__list {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+    .navigation__item {
+        margin: 8px;
+    }
+    .navigation__link:link, .navigation__link:visited {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 300;
+        padding: 12px 16px;
+        color: rgb(32, 1, 61);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .navigation__link:link span, .navigation__link:visited span {
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .navigation__link:hover, .navigation__link:active {
+        background-position: 100%;
+        border-bottom: solid 1px rgb(32, 1, 61); 
+        transform: translateX(1rem);
+    }
+    .navigation__checkbox:checked ~ .navigation__background {
+        transform: scale(80);
+    }
+    .navigation__checkbox:checked ~ .navigation__nav {
+        opacity: 1;
+        width: 80%;
+    }
+    .navigation__icon {
+        position: relative;
+        margin-top: 38px;
+    }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 24px;
+        height: 2px;
+        background-color: #333;
+        display: inline-block;
+    }
+    .navigation__icon::before, .navigation__icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+    }
+    .navigation__icon::before {
+        top: -6.4px;
+    }
+    .navigation__icon::after {
+        top: 6.4px;
+    }
+    .navigation__button:hover .navigation__icon::before {
+        top: -8px;
+    }
+    .navigation__button:hover .navigation__icon::after {
+        top: 8px;
+    }
+    .navigation__checkbox:checked + .navigation__button .navigation__icon {
+        background-color: transparent;
+    }
+    .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+    .main-nav,
+    .main-but{display: none;}
+    .hero-img-2{display: none;}
+    .hero-img {display: inline-block; margin-left: -25px; margin-top: -22px; margin-bottom: 20px;}
+    .services{margin-top: -70px;}
+    .ser:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .features{  margin-top: 10px;}
+    .features-box {margin-top: 35px;}
+    .feat-1 {margin-right: 10px;}
+    .feat-1,
+    .feat-2{
+        height: 30%;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .feat:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .feat-p{padding-bottom: 20px;}
+    .p-but-h,
+    .p-but-f{
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+    .plan:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .p-but-h,
+    .p-but-f{
+        margin-left: 110px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .try-it{margin: 0; width: 100%;}
+    footer{margin-top: 20px; width: 100%;}
+    .foot{margin-bottom: 25px;}
+    .fot-ser {width: 50%;}
+    .fot-comp {width: 50%;} 
+    .fot-coln {
+        margin-left: 22%;
+        margin-bottom: 20px;
+    }
+
+
+}
