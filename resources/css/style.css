@@ -166,7 +166,7 @@ header{
 .services{margin-top: -230px;}
 .ser-para1{
     font-size: 80%;
-    margin-bottom: 20%;
+    margin-bottom: 5px;
     margin-top: 20%;
 }
 .ser-para2{
@@ -215,7 +215,7 @@ header{
 /*-----------------------------------------
 -------------Features----------------------
 -----------------------------------------*/
-.features{  margin-top: -30%;}
+.features{  margin-top: -10%;}
 
 .feat-1{
     margin-right: 30px;
