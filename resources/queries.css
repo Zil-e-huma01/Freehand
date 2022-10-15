@@ -41,7 +41,7 @@
 
 /*-----small phones to small tablets: 481px to 767px----*/
 @media only screen and (max-width: 767px){ 
-    body{ font-size: 16px; width:100%;}
+    body{ font-size: 16px; width: 100%;overflow: hidden; }
     .navigation{display: inline-block;}
     .navigation__button {
         background-color: white;
@@ -49,7 +49,7 @@
         width: 50px;
         position: fixed;
         top: 35px;
-        right: 100px;
+        right: 15px;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -62,7 +62,7 @@
         border-radius: 50%;
         position: fixed;
         top: 36px;
-        right: 101px;
+        right: 16px;
         background-color: white;
         z-index: 1000;
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -153,15 +153,20 @@
         top: 0;
         transform: rotate(-135deg);
     }
+    header{width: 100%;}
+    .hero-text{
+        line-height: 25px;
+        text-align: left;
+    }
     .main-nav,
     .main-but{display: none;}
     .hero-img-2{display: none;}
     .hero-img {display: inline-block; margin-left: -25px; margin-top: -22px; margin-bottom: 20px;}
-    .services{margin-top: -70px; width:100%;}
+    .services{margin-top: -70px; width: 85%;}
     .ser:not(:last-child) {
         margin-bottom: 20px;
     }
-    .features{  margin-top: 10px; width: 95%;}
+    .features{  margin-top: 10px; width: 75%;}
     .features-box {margin-top: 35px;}
     .feat-1 {margin-right: 10px;}
     .feat-1,
@@ -174,7 +179,7 @@
         margin-bottom: 20px;
     }
     .feat-p{padding-bottom: 20px;}
-    .plan{width: 100%}
+    .plans {width: 80%;}
     .p-but-h,
     .p-but-f{
         margin-left: 50px;
@@ -190,8 +195,8 @@
         margin-top: 25px;
         margin-bottom: 10px;
     }
-    .try-it{margin: 0; width: 100%;}
-    footer{margin-top: 20px; width: 100%;}
+    .try-it{margin: 0 0; width: 46.2vh; padding: 20px 40px;}
+    footer{margin-top: 20px; width: 46.2vh;}
     .foot{margin-bottom: 25px;}
     .fot-ser {width: 50%;}
     .fot-comp {width: 50%;} 
